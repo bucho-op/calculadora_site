@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="calccoluni.css">
+    <title>Calculadora de faltas</title>
+    <!-- Additional meta tags, stylesheets, and scripts can go here -->
+</head>
+<body>
+    <!-- Your content goes here -->
+    <h1>CALCULADORA DE FALTAS - VERSÃO CAp-COLUNI/UFV</h1>
+    <p id="p1"> Essa calculadora será capaz de calcular quantas vezes 
+        você ainda pode faltar ao longo do ano, de acordo com a sua série,
+         seu número atual de faltas, e o número de semanas (de aula normal) que faltam para o ano letivo acabar.</p>
+    <p id="p3">Obs.: O cálculo não leva em conta as semanas de provas, e, consequentemente, as presenças contadas nos dias de prova. Por padrão, consideramos que todos os professores cobram presença.</p>
+    
+    <div id = "p2">
+    <label>Digite o seu número atual de faltas.</label>
+    <input class="in" id="numFaltas" value="Ex.: 35"><br>
+    
+    <label>Digite a sua série (apenas o número).</label>
+    <input class="in" id="numSerie" value="Ex.: 1"><br>
+    <label>Digite quantas semanas letivas faltam para acabar o ano. <b>(Fácil de achar no calendário escolar)</b></label>
+    <input class="in" id="numSemanas" value="Ex.: 14"><br>
 
+    
+    
+
+    <input type="submit" value="Confirmar" id="enviaValor">
+    </div>
+
+    <p id="output"></p>
+    <div id="shape"></div>
+    <div id="shape2"></div>
+    <script src="calccoluni.js"></script>
+
+</body>
+</html>
