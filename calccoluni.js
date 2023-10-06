@@ -23,14 +23,17 @@ document.getElementById("enviaValor").onclick = function(){
 
     if (isNaN(numFaltas) || isNaN(numSem)){
         document.getElementById("output").innerHTML = `Você escreveu um valor inválido :(`;
-        makeSwitch = false
+        makeSwitch = false;
     }
     
-
+    if (makeSwitch && (numFaltas < 0 || numSem < 0)){
+        document.getElementById("output").innerHTML = `Você escreveu um valor inválido :(`;
+        makeSwitch = false;
+    }
 
     if (makeSwitch == true){
 
-    
+
         switch(numSerie){
             case "1":
                 const numMaximo1 = 310;
